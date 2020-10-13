@@ -23,7 +23,3 @@ class blog(models.Model):
     Title = models.CharField(max_length=100000)
     Category = models.CharField(max_length=10000, default='Fashion')
     Date = models.DateTimeField(auto_now_add=True)
-
-
-class products(models.Model):
-    image = models.ImageField(upload_to='images')

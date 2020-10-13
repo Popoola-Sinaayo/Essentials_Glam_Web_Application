@@ -7,7 +7,7 @@ from django.db import IntegrityError
 from django.core.mail import send_mail
 from django.template import loader
 from django.template.loader import render_to_string
-from .models import Mail_Subscriber, Comment, products
+from .models import Mail_Subscriber, Comment
 from django.http import HttpResponseRedirect
 
 
@@ -122,6 +122,7 @@ def comment_handler(request):
         })
 
 
+'''
 def product(request):
     if request.method == "GET":
         return render(request, 'Essential_Glams/product.html', {
@@ -132,6 +133,7 @@ def product(request):
         p = products(image=image)
         p.save()
         return render(request, 'Essential_Glams/index.html')
+'''
 
 
 def product_video(request):
