@@ -1,1 +1,1 @@
-web: python manage.py runserver
+web: gunicorn Essential_Glam_Web.wsgi --log-file -
