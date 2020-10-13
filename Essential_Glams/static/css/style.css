@@ -95,6 +95,7 @@ p {
 
 #glam_h1 {
 	color: black;
+	text-align: center;
 }
 
 #discount_h1{
@@ -489,6 +490,7 @@ ol {
 
 .inner-header .logo {
 	padding: 12px 0;
+	text-align: center;
 }
 
 .inner-header .logo a {
@@ -1245,6 +1247,12 @@ ol {
 .product-item .pi-pic {
 	overflow: hidden;
 	position: relative;
+}
+
+.product-item .pi-pic video {
+	width: 100%;
+	height: 300px;
+	min-width: 100%;
 }
 
 .product-item .pi-pic img {
@@ -3713,6 +3721,7 @@ ol {
 .map-inner .book-icons {
 	display: flex;
 	padding-top: 25px;
+	text-align: center;
 }
 
 .map-inner .book-icons a i {

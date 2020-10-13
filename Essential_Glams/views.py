@@ -8,6 +8,7 @@ from django.core.mail import send_mail
 from django.template import loader
 from django.template.loader import render_to_string
 from .models import Mail_Subscriber, Comment, products
+from django.http import HttpResponseRedirect
 
 
 def index(request):
@@ -116,7 +117,7 @@ def comment_handler(request):
     else:
         c = Comment(User=User, User_Email=Email, comment=Comment_made)
         c.save()
-        return render(request, 'Essential_Glams/comment.html', {
+        return render(request, 'Essential_Glams/faq.html', {
             'Comment': Comment.objects.all()
         })
 
@@ -135,3 +136,11 @@ def product(request):
 
 def product_video(request):
     return render(request, 'Essential_Glams/product-video.html')
+
+
+def test(request):
+    return render(request, 'registration/password_reset_form.html')
+
+
+def confirm(request):
+    return HttpResponseRedirect('accounts/password_reset/done/')

@@ -129,6 +129,9 @@ STATIC_URL = '/static/'
     use_tsl= True,
     use_ssl= False
 )'''
+
+#EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 465
 # Emailport can also be 587
@@ -137,7 +140,7 @@ EMAIL_HOST_PASSWORD = 'prayer1020!'
 EMAIL_USE_TLS = False
 EMAIL_USE_SSL = True
 
-#images
+# images
 MEDIA_URL = '/media/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
