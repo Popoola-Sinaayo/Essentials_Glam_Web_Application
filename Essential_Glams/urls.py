@@ -17,5 +17,6 @@ urlpatterns = [
     path('comment-handler', views.comment_handler, name="comment_handler"),
     path('product-video', views.product_video, name="video"),
     path('test', views.test, name="test"),
-    path('confirm', views.confirm, name="confirm")
+    path('confirm', views.confirm, name="confirm"),
+    path('login_in', views.login_in, name="login_in")
 ]

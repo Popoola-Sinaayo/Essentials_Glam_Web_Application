@@ -70,6 +70,10 @@ def logout_view(request):
     return render(request, 'Essential_Glams/login.html')
 
 
+def login_in(request):
+    return render(request, 'Essential_Glams/login.html')
+
+
 def book(request):
     return render(request, 'Essential_Glams/contact.html')
 
