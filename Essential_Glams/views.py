@@ -84,6 +84,10 @@ def comment(request):
     })
 
 
+def product(request):
+    return render(request, 'Essential_Glam/product.html')
+
+
 def success(request):
     return render(request, 'Essential_Glams/Success.html')
 

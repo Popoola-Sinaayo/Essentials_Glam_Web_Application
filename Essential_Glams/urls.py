@@ -18,5 +18,6 @@ urlpatterns = [
     path('product-video', views.product_video, name="video"),
     path('test', views.test, name="test"),
     path('confirm', views.confirm, name="confirm"),
-    path('login_in', views.login_in, name="login_in")
+    path('login_in', views.login_in, name="login_in"),
+    path('product', views.product, name="product")
 ]
