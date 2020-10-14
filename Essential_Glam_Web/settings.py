@@ -24,7 +24,7 @@ print(BASE_DIR)
 SECRET_KEY = 'n9fi=xc*-^&m8s!jub_o2c)z#rk1^x83-zcvbbuz#=)ziqylw2'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['nameless-sea-93852.herokuapp.com']
 
@@ -87,11 +87,11 @@ DATABASES = {
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'd498s10erknc34',
-        'USER': 'dxkuvaoghzotxl',
+        'NAME': 'ddvkmeisich16t',
+        'USER': 'vlqpirbvbugtdi',
         'PORT': '5432',
-        'PASSWORD': '2dca25c2e09ae4bda6463d9d82b21e582b5194e6f2410504763ec04378742aa1',
-        'HOST': 'ec2-54-75-246-118.eu-west-1.compute.amazonaws.com'
+        'PASSWORD': 'a32e6943d92bd791cf8efed806ae96f33cdc0cdd7baa6960369160a9dc3fa6ed',
+        'HOST': 'ec2-52-72-221-20.compute-1.amazonaws.com'
     }
 }
 
