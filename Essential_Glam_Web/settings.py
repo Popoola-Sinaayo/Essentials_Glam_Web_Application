@@ -24,9 +24,10 @@ print(BASE_DIR)
 SECRET_KEY = 'n9fi=xc*-^&m8s!jub_o2c)z#rk1^x83-zcvbbuz#=)ziqylw2'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['nameless-sea-93852.herokuapp.com']
+ALLOWED_HOSTS = []
+# ['nameless-sea-93852.herokuapp.com']
 
 
 # Application definition

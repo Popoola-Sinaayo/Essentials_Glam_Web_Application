@@ -15,14 +15,15 @@ def index(request):
     return render(request, 'Essential_Glams/index.html')
 
 
-def login_view(request):
+'''def login_view(request):
     if request.user.is_authenticated:
         print("Authenticasted")
         return render(request, 'Essential_Glams/index.html')
     else:
         return render(request, 'Essential_Glams/login.html')
+'''
 
-
+'''
 def Save_User(request):
     username = request.POST['username']
     password = request.POST['password']
@@ -46,8 +47,9 @@ def Save_User(request):
             return render(request, 'Essential_Glams/register.html', {
                 'message': "Username is already taken!"
             })
+'''
 
-
+'''
 def login_user(request):
     username = request.POST['username']
     password_one = request.POST['password_one']
@@ -59,19 +61,22 @@ def login_user(request):
         return render(request, 'Essential_Glams/login.html', {
             'message': 'Incorrect username or password'
         })
+'''
 
-
+'''
 def register_view(request):
     return render(request, 'Essential_Glams/register.html')
+'''
 
-
+'''
 def logout_view(request):
     logout(request)
     return render(request, 'Essential_Glams/login.html')
-
-
+'''
+'''
 def login_in(request):
     return render(request, 'Essential_Glams/login.html')
+'''
 
 
 def book(request):
@@ -85,7 +90,7 @@ def comment(request):
 
 
 def product(request):
-    return render(request, 'Essential_Glam/product.html')
+    return render(request, 'Essential_Glams/product.html')
 
 
 def success(request):
@@ -148,8 +153,10 @@ def product_video(request):
     return render(request, 'Essential_Glams/product-video.html')
 
 
+'''
 def test(request):
     return render(request, 'registration/password_reset_form.html')
+'''
 
 
 def confirm(request):
