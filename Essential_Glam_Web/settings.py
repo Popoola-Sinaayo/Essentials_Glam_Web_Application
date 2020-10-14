@@ -75,14 +75,25 @@ WSGI_APPLICATION = 'Essential_Glam_Web.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
-
+'''
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+'''
 
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'd498s10erknc34',
+        'USER': 'dxkuvaoghzotxl',
+        'PORT': '5432',
+        'PASSWORD': '2dca25c2e09ae4bda6463d9d82b21e582b5194e6f2410504763ec04378742aa1',
+        'HOST': 'ec2-54-75-246-118.eu-west-1.compute.amazonaws.com'
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
