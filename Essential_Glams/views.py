@@ -97,11 +97,11 @@ def success(request):
     return render(request, 'Essential_Glams/Success.html')
 
 
-def mail():
+def mail(mail):
     html_message = render_to_string(
         'Essential_Glams/Success.html', {'context': 'values'})
-    send_mail('Hey', 'Hry Therre', 'olusegunpopoola4real@gmail.com',
-              ['sinaayopopoola@gmail.com'], html_message=html_message, fail_silently=False)
+    send_mail('Welcome To Essentials Glam', 'Thanks For Subscribing', 'theessentialsglam@gmail.com',
+              [mail], html_message=html_message, fail_silently=False)
 
 
 def register_mail(request):
@@ -160,4 +160,4 @@ def test(request):
 
 
 def confirm(request):
-    return HttpResponseRedirect('accounts/password_reset/done/')
+    return render(request, 'Essential_Glams/Welcome.html')

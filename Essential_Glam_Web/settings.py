@@ -24,7 +24,7 @@ print(BASE_DIR)
 SECRET_KEY = 'n9fi=xc*-^&m8s!jub_o2c)z#rk1^x83-zcvbbuz#=)ziqylw2'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['nameless-sea-93852.herokuapp.com']
 
@@ -83,7 +83,6 @@ DATABASES = {
     }
 }
 '''
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -94,6 +93,7 @@ DATABASES = {
         'HOST': 'ec2-52-72-221-20.compute-1.amazonaws.com'
     }
 }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
@@ -152,8 +152,8 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 465
 # Emailport can also be 587
-EMAIL_HOST_USER = 'olusegunpopoola4real@gmail.com'
-EMAIL_HOST_PASSWORD = 'prayer1020!'
+EMAIL_HOST_USER = 'theessentialsglam@gmail.com'
+EMAIL_HOST_PASSWORD = 'essentialsglam'
 EMAIL_USE_TLS = False
 EMAIL_USE_SSL = True
 
